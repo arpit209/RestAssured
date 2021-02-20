@@ -10,7 +10,7 @@ public class Test01_Get {
 
 	@Test
 	void test_01(){
-		
+		//change for commit
 		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
