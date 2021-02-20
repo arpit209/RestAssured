@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Test01_Get {
+public class Test02_Get {
 
 	@Test
 	void test_01(){
-		//change for commit
+		
 		Response response = RestAssured.get("https://reqres.in/api/users?page=2");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
